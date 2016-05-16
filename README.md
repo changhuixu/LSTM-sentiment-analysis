@@ -28,9 +28,9 @@ maxlen	|	time (s) | train accuracy | test accuracy
 175 | 3352 | 0.9819 | 0.8359
 200 | 3811 | 0.9831 | 0.8514
 
-![L1_LSTM](https://github.com/changhuixu/LSTM-sentiment-analysisblob/master/lstm/sentence_length.png "")
+![L1_LSTM](https://github.com/changhuixu/LSTM-sentiment-analysisblob/master/sentence_length.png "")
 The length of sentences are right skewed (Q1:67, Median 92, Q3:152). With squence length of 150, about 75% of reviews are covered. 
-![L1_LSTM](https://github.com/changhuixu/LSTM-sentiment-analysis/blob/master/lstm/length_accuracy.png "")
+![L1_LSTM](https://github.com/changhuixu/LSTM-sentiment-analysis/blob/master/length_accuracy.png "")
 
 
 Second, keeping the `maxlen = 150`, we tested the effect of `max_features`, which varied from 2500 to 50000.
