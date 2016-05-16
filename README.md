@@ -28,9 +28,9 @@ maxlen	|	time (s) | train accuracy | test accuracy
 175 | 3352 | 0.9819 | 0.8359
 200 | 3811 | 0.9831 | 0.8514
 
-![L1_LSTM](https://github.com/TomWerner/sentiment_analysis/blob/master/lstm/sentence_length.png "")
+![L1_LSTM](https://github.com/changhuixu/LSTM-sentiment-analysisblob/master/lstm/sentence_length.png "")
 The length of sentences are right skewed (Q1:67, Median 92, Q3:152). With squence length of 150, about 75% of reviews are covered. 
-![L1_LSTM](https://github.com/TomWerner/sentiment_analysis/blob/master/lstm/length_accuracy.png "")
+![L1_LSTM](https://github.com/changhuixu/LSTM-sentiment-analysis/blob/master/lstm/length_accuracy.png "")
 
 
 Second, keeping the `maxlen = 150`, we tested the effect of `max_features`, which varied from 2500 to 50000.
@@ -49,7 +49,7 @@ max_features	| train accuracy | test accuracy
 50000 | 0.9843 | 0.8257
 60000 | 0.9854 | 0.8470
 
-![L1_LSTM](https://github.com/TomWerner/sentiment_analysis/blob/master/lstm/feature_accuracy.png "")
+![L1_LSTM](https://github.com/changhuixu/LSTM-sentiment-analysis/blob/master/feature_accuracy.png "")
 
 It is interesting to notice that the most frequently appeared 2500 english words could largely determine the sentiment of movie reviews very well.
 Britain’s Guardian newspaper, in 1986, estimated the size of the average person’s vocabulary as developing from roughly 300 words at two years old, through 5,000 words at five years old, to some 12,000 words at the age of 12.
