@@ -1,0 +1,10 @@
+#!/bin/sh
+
+#$ -q UI
+#$ -l h_rt=500:00:00
+#$ -cwd
+#$ -pe smp 16
+
+
+THEANO_FLAGS="floatX=float32" python lstm.py >output
+
